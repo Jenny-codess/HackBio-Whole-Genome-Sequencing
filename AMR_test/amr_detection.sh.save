@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+#Quality Control
+fastqc raw_reads/*.fastq.gz -o fastQC/ 
+
+SAMPLES=(
+	"SRR13554759"
+	"SRR13554759"
+)
+
+
+#Trim
+for SAMPLE in "${SAMPLES[@]}"; do
+
+ fastp \
+    -i "/home/rmourao/jenny/hackbio/AMR_test/raw_reads/${SAMPLE}_1.fastq.gz" \
+    -I "/home/rmourao/jenny/hackbio/AMR_test/raw_reads/${SAMPLE}_2.fastq.gz" \
+    -o "trimmed_reads/${SAMPLE}_1.trim.fastq.gz" \
+    -O "trimmed_reads/${SAMPLE}_2.trim.fastq.gz" \
+    --html "trimmed_reads/${SAMPLE}_fastp.html"
+done
+
+
+#Assemble reads
+spades.py -1 /trimmed_reads/SRR13554759_1.trim.fastq.gz -2 /trimmed_reads/SRR13554759_2.trim.fastq.gz -o assembly
+
+
+#Detect AMR genes
+abricate assembly/contigs.fasta > AMR/amr_tab.tab

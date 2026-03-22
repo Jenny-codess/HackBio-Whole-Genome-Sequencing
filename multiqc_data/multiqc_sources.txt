@@ -1,0 +1,11 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	ACBarrie_R1	/home/rmourao/jenny/hackbio/QC_reports/ACBarrie_R1_fastqc.zip
+FastQC	all_sections	ACBarrie_R2	/home/rmourao/jenny/hackbio/QC_reports/ACBarrie_R2_fastqc.zip
+FastQC	all_sections	Alsen_R1	/home/rmourao/jenny/hackbio/QC_reports/Alsen_R1_fastqc.zip
+FastQC	all_sections	Alsen_R2	/home/rmourao/jenny/hackbio/QC_reports/Alsen_R2_fastqc.zip
+FastQC	all_sections	Baxter_R1	/home/rmourao/jenny/hackbio/QC_reports/Baxter_R1_fastqc.zip
+FastQC	all_sections	Baxter_R2	/home/rmourao/jenny/hackbio/QC_reports/Baxter_R2_fastqc.zip
+FastQC	all_sections	Chara_R1	/home/rmourao/jenny/hackbio/QC_reports/Chara_R1_fastqc.zip
+FastQC	all_sections	Chara_R2	/home/rmourao/jenny/hackbio/QC_reports/Chara_R2_fastqc.zip
+FastQC	all_sections	Drysdale_R1	/home/rmourao/jenny/hackbio/QC_reports/Drysdale_R1_fastqc.zip
+FastQC	all_sections	Drysdale_R2	/home/rmourao/jenny/hackbio/QC_reports/Drysdale_R2_fastqc.zip

@@ -1,0 +1,15 @@
+set -e
+true
+true
+/home/rmourao/.conda/envs/spades_env/bin/spades-hammer /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/corrected/configs/config.info
+/home/rmourao/.conda/envs/spades_env/bin/python /home/rmourao/.conda/envs/spades_env/share/spades/spades_pipeline/scripts/compress_all.py --input_file /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/corrected/corrected.yaml --ext_python_modules_home /home/rmourao/.conda/envs/spades_env/share/spades --max_threads 16 --output_dir /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/corrected --gzip_output
+true
+true
+/home/rmourao/.conda/envs/spades_env/bin/spades-core /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K21/configs/config.info
+/home/rmourao/.conda/envs/spades_env/bin/spades-core /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K33/configs/config.info
+/home/rmourao/.conda/envs/spades_env/bin/spades-core /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K55/configs/config.info
+/home/rmourao/.conda/envs/spades_env/bin/spades-core /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/configs/config.info
+/home/rmourao/.conda/envs/spades_env/bin/python /home/rmourao/.conda/envs/spades_env/share/spades/spades_pipeline/scripts/copy_files.py /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/before_rr.fasta /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/before_rr.fasta /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/assembly_graph_after_simplification.gfa /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/assembly_graph_after_simplification.gfa /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/final_contigs.fasta /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/contigs.fasta /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/first_pe_contigs.fasta /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/first_pe_contigs.fasta /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/strain_graph.gfa /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/strain_graph.gfa /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/scaffolds.fasta /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/scaffolds.fasta /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/scaffolds.paths /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/scaffolds.paths /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/assembly_graph_with_scaffolds.gfa /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/assembly_graph_with_scaffolds.gfa /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/assembly_graph.fastg /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/assembly_graph.fastg /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/K77/final_contigs.paths /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/contigs.paths
+true
+/home/rmourao/.conda/envs/spades_env/bin/python /home/rmourao/.conda/envs/spades_env/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py --result_scaffolds_filename /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/scaffolds.fasta --misc_dir /home/rmourao/jenny/hackbio/de_novo_Genome/assembly/misc --threshold_for_breaking_scaffolds 3
+true

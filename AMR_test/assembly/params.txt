@@ -1,0 +1,38 @@
+Command line: /home/rmourao/.conda/envs/spades/bin/spades.py	-1	/home/rmourao/jenny/hackbio/AMR_test/trimmed_reads/SRR13554759_1.trim.fastq.gz	-2	/home/rmourao/jenny/hackbio/AMR_test/trimmed_reads/SRR13554759_2.trim.fastq.gz	-o	/home/rmourao/jenny/hackbio/AMR_test/assembly	
+
+System information:
+  SPAdes version: 4.0.0
+  Python version: 3.12.3
+  OS: Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.17
+
+Output dir: /home/rmourao/jenny/hackbio/AMR_test/assembly
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/home/rmourao/jenny/hackbio/AMR_test/trimmed_reads/SRR13554759_1.trim.fastq.gz']
+      right reads: ['/home/rmourao/jenny/hackbio/AMR_test/trimmed_reads/SRR13554759_2.trim.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+  Assembly graph output will use GFA v1.2 format
+Other parameters:
+  Dir for temp files: /home/rmourao/jenny/hackbio/AMR_test/assembly/tmp
+  Threads: 16
+  Memory limit (in Gb): 94
+

@@ -1,0 +1,66 @@
+/home/rmourao/.conda/envs/sc_ronald/bin/quast.py assembly/contigs.fasta -o quast_report
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.10.18
+  CPUs number: 28
+
+Started: 2026-03-20 00:01:57
+
+Logging to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/quast.log
+NOTICE: Maximum number of threads is set to 7 (use --threads option to set it manually)
+
+CWD: /home/rmourao/jenny/hackbio/de_novo_Genome
+Main parameters: 
+  MODE: default, threads: 7, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  assembly/contigs.fasta ==> contigs
+
+2026-03-20 00:02:00
+Running Basic statistics processor...
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 310820, L50 = 5, auN = 323926.0, Total length = 4260910, GC % = 27.78, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 3x)...
+    saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 3x)...
+    saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-03-20 00:02:03
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-03-20 00:02:03
+RESULTS:
+  Text versions of total report are saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/report.html
+  PDF version (tables and plots) is saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/report.pdf
+  Icarus (contig browser) is saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/icarus.html
+  Log is saved to /home/rmourao/jenny/hackbio/de_novo_Genome/quast_report/quast.log
+
+Finished: 2026-03-20 00:02:03
+Elapsed time: 0:00:06.727870
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

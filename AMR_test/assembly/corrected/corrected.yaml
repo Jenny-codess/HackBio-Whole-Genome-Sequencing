@@ -1,0 +1,9 @@
+- "left reads":
+  - "/home/rmourao/jenny/hackbio/AMR_test/assembly/corrected/SRR13554759_1.trim.fastq00.0_0.cor.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/home/rmourao/jenny/hackbio/AMR_test/assembly/corrected/SRR13554759_2.trim.fastq00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/home/rmourao/jenny/hackbio/AMR_test/assembly/corrected/SRR13554759__unpaired00.0_0.cor.fastq.gz"
+  "type": "paired-end"
